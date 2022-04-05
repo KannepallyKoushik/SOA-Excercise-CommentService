@@ -4,11 +4,11 @@
 <body>
     <div class="container">
         <a href="/"><img th:src="@{/Afbeelding1-1.jpg}" style="width:100%" /></a>
-        <h2>Service Oriented Architecture Blog</h2>
-        <h3 th:text="${blog.title}">Blog Title</h3>
-        <p th:text="${blog.content}">Blog content</p>
+<!--        <h2>Service Oriented Architecture Blog</h2>-->
+<!--        <h3 th:text="${blog.title}">Blog Title</h3>-->
+<!--        <p th:text="${blog.content}">Blog content</p>-->
         <hr>
-        <div th:each="comment: ${blog.comments}">
+        <div th:each="comment: ${blog}">
             <b th:text="${comment.author}">Comment A</b><br/>
             <small th:text="${comment.comment}"></small><br>---<br>
         </div>
